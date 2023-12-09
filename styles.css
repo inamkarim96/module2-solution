@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.section-title {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px;
+  text-align: right;
+}
+
+/* Desktop View */
+.desktop-view {
+  width: 31%; 
+  float: left;
+}
+
+/* Tablet View */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .desktop-view {
+    width: 48%; 
+  }
+  .desktop-view:nth-child(3) {
+    clear: both; 
+    width: 100%;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 767px) {
+  .desktop-view {
+    width: 100%; 
+    clear: both; 
+  }
+}
